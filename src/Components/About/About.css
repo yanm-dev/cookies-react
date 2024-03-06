@@ -1,0 +1,11 @@
+.flex-cont-about{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+}
+.flex-cont-about > div {
+    position: relative;
+    top: 139px;
+    width:50%;
+    border:2px solid red;
+}

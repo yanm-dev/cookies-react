@@ -1,0 +1,101 @@
+#header-cont {
+    background-color: bisque;
+    padding:10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.mobile-links:hover {
+    background-color: burlywood;
+    transition: all 0.5s;
+}
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    display:block;
+    position: relative;
+    height:0;
+    width:100%;
+    overflow: hidden;
+    transition: all 1.5s;
+    padding: 0;
+    margin:0;
+}
+.mobile-nav-open {
+    display: block;
+    height:15vh;
+    background-color: bisque;
+    justify-content: flex-start;
+}
+.fa-shopping-cart{font-size:34px;}
+.fa-birthday-cake {font-size: 30px;}
+.cake-div, .cart-div {position: absolute;}
+.cake-div {
+    right:48vw;
+    top:2.8vh;
+}
+.cart-div {
+    right:15px;
+    top:2.8vh;
+}
+.notification {
+position: relative;
+padding:5px;
+}
+.badge {
+    position: absolute;
+    top: -15px;
+    left: -18px;
+    color: red;
+    font-size: 20px;
+}
+.cart-animation {
+    animation: mymove 3s infinite;
+}
+.cart-animation-off {
+    animation: mymoveoff 1s ;
+}
+@keyframes mymove {
+    0% {color:black}
+    50% {color:orange}
+    100% {color:black}
+}
+/* @keyframes linkBG {
+    0% {background-color:rgb(185, 165, 165)}
+    100% {color:black}
+} */
+@keyframes mymoveoff {
+    0% {color:black}
+    100% {color:black}
+}
+@media (max-width: 500px){
+    .desktop-nav {display: none;}
+    .mobile-nav {
+        display: flex;
+        font-size:15px
+    }
+    .mobile-links {padding:5px;}
+    #header-cont {padding:0;}
+    #header-cont img{
+        width:10%;
+        float: left;
+        margin-left: 10px;
+        margin-top:5px;
+    } 
+    .cake-div {
+        right: 47%;
+        top:5px;
+    }
+    .cart-div {top:5px;}
+  }
+  @media (min-width: 501px){
+    .mobile-nav {
+        display: flex;
+        justify-content: flex-start;
+        overflow: initial;
+        height:auto;
+        flex-direction: row;
+    }
+    .mobile-nav a {padding:10px;}
+    .hidden-img {display:none;}
+  }

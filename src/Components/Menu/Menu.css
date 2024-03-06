@@ -1,0 +1,13 @@
+.main-cont {
+    width:100%;
+    margin: auto;
+}
+#menu-h4 {
+    font-size: 30px;
+    margin: 10px 0px;
+}
+.flex-cont-menu {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+}

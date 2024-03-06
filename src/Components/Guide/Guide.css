@@ -1,0 +1,16 @@
+#table-guide-cont {
+    width:100%;
+    margin:auto;
+}
+th, td {
+    border-bottom: 3px solid bisque;
+}
+tr:hover {background-color: bisque}
+th, td {
+    padding: 15px;
+}
+@media (max-width: 500px){
+    #table-guide-cont {
+        width:100%;
+    }
+}
